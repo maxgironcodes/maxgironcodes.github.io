@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div id="WRAPPER-NARROW">
+  {% include profile.html %}
+  <section id="BLOG">
+    {% for post in site.posts %}
+    <a class="card add-shadow remove-border-bottom" href="{{ post.url }}" style="border-color: #{{ post.color }};">
+      <div class="card_info">
+        <h2 class="card_title">{{ post.title }}</h2>
+        <h3 class="card_date">{{ post.date | date: "%B %-d, %Y" }}</h3>
+        <p class="card_caption">{{ post.content | strip_html | truncatewords: 50 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </section>
+</div>

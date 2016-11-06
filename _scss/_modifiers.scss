@@ -1,0 +1,28 @@
+// Utitlites
+.add-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.remove-border-bottom {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+// Grid
+.row {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  padding: $gutter;
+}

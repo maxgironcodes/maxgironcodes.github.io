@@ -1,0 +1,29 @@
+// Should strictly define dimensions and positions
+
+
+#WRAPPER-WIDE {
+  max-width: 1280px;
+  margin: auto;
+}
+
+#WRAPPER-NARROW {
+  max-width: 1080px;
+  margin: auto;
+}
+
+#HEADER {
+  width: 100%;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+#BLOG,
+#POST {
+  padding-left: $gutter * 2;
+  padding-right: $gutter * 2;
+}
+
+#FOOTER {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

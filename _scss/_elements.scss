@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: $c-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: $c-blue;
+  text-decoration: none;
+  border-bottom: 2px solid $c-blue;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  &:only-of-type {
+    margin-bottom: 0;
+  }
+}
+
+pre[class*="language-"] {
+  font-size: 1.25rem;
+  margin: 40px 0;
+}

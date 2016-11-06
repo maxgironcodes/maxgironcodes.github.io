@@ -1,0 +1,75 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Variables - Space
+$gutter: 6px;
+
+// Variables - Color
+$c-background: #FAFBFB;
+$c-blue: #52616A;
+$c-tan: scale-color(#A69C7E, $lightness: 70%);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+// Files
+@import 'elements';
+@import 'layout';
+@import 'widgets';
+@import 'modifiers';
+
+// Queries
+/* --- Larger than mobile */
+@media (min-width: 400px) {}
+
+/* --- Larger than phablet (activate grid) */
+@media (min-width: 550px) {
+  .small-1 { width: 8.33%; }
+  .small-2 { width: 16.66%; }
+  .small-3 { width: 25%; }
+  .small-4 { width: 33.33%; }
+  .small-5 { width: 41.66%; }
+  .small-6 { width: 50%; }
+  .small-7 { width: 58.33%; }
+  .small-8 { width: 66.66%; }
+  .small-9 { width: 75%; }
+  .small-10 { width: 83.33%; }
+  .small-11 { width: 91.66%; }
+  .small-12 { width: 100%; }
+}
+
+/* --- Larger than tablet */
+@media (min-width: 750px) {
+  .medium-1 { width: 8.33%; }
+  .medium-2 { width: 16.66%; }
+  .medium-3 { width: 25%; }
+  .medium-4 { width: 33.33%; }
+  .medium-5 { width: 41.66%; }
+  .medium-6 { width: 50%; }
+  .medium-7 { width: 58.33%; }
+  .medium-8 { width: 66.66%; }
+  .medium-9 { width: 75%; }
+  .medium-10 { width: 83.33%; }
+  .medium-11 { width: 91.66%; }
+  .medium-12 { width: 100%; }}
+
+/* -- Larger than desktop */
+@media (min-width: 1000px) {
+  .large-1 { width: 8.33%; }
+  .large-2 { width: 16.66%; }
+  .large-3 { width: 25%; }
+  .large-4 { width: 33.33%; }
+  .large-5 { width: 41.66%; }
+  .large-6 { width: 50%; }
+  .large-7 { width: 58.33%; }
+  .large-8 { width: 66.66%; }
+  .large-9 { width: 75%; }
+  .large-10 { width: 83.33%; }
+  .large-11 { width: 91.66%; }
+  .large-12 { width: 100%; }
+}
+
+/* -- Larger than Desktop HD */
+@media (min-width: 1200px) {}
