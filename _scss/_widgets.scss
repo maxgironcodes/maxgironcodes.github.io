@@ -12,10 +12,10 @@
     display: inline-block;
   }
   &_tagline {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6;
-    margin: 25px auto 35px;
+    margin: 25px auto 45px;
     text-align: center;
     color: $c-blue;
   }
@@ -73,19 +73,17 @@
 
 .card {
   width: 100%;
+  color: black;
   border-top: 25px solid $c-blue;
+  border-bottom: none;
   background-color: white;
   margin-bottom: 20px;
+  padding: 30px;
   position: relative;
   display: block;
 
   &:only-child {
     margin-bottom: 0;
-  }
-  &_info {
-    width: 100%;
-    padding: 35px;
-    color: black;
   }
   &_title {
     font-size: 1.4rem;
@@ -107,24 +105,22 @@
 
 .post {
   width: 100%;
-  padding: 70px;
+  padding: 30px;
   border-top: 25px solid $c-blue;
   background-color: white;
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
   &_title {
-    font-size: 2.2rem;
-    text-align: center;
+    font-size: 1.5rem;
   }
   &_info {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    margin-top: 8px;
-    margin-bottom: 70px;
-    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
   }
   &_time:before {
     font-size: 1rem;

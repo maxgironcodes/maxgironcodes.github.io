@@ -9,7 +9,6 @@ $gutter: 6px;
 // Variables - Color
 $c-background: #FAFBFB;
 $c-blue: #52616A;
-$c-tan: scale-color(#A69C7E, $lightness: 70%);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
@@ -38,6 +37,37 @@ $c-tan: scale-color(#A69C7E, $lightness: 70%);
   .small-10 { width: 83.33%; }
   .small-11 { width: 91.66%; }
   .small-12 { width: 100%; }
+
+  #HEADER {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .profile_tagline {
+    font-size: 1.25rem;
+    margin: 25px auto 35px;
+  }
+  .card {
+    padding: 35px;
+  }
+  .post {
+    padding: 70px;
+
+    p {
+      font-size: 1.25rem;
+    }
+    &_title {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    &_info {
+      font-size: 1.1rem;
+      margin-top: 8px;
+      margin-bottom: 70px;
+      text-align: center;
+    }
+  }
 }
 
 /* --- Larger than tablet */
@@ -53,7 +83,8 @@ $c-tan: scale-color(#A69C7E, $lightness: 70%);
   .medium-9 { width: 75%; }
   .medium-10 { width: 83.33%; }
   .medium-11 { width: 91.66%; }
-  .medium-12 { width: 100%; }}
+  .medium-12 { width: 100%; }
+}
 
 /* -- Larger than desktop */
 @media (min-width: 1000px) {
@@ -72,4 +103,5 @@ $c-tan: scale-color(#A69C7E, $lightness: 70%);
 }
 
 /* -- Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
