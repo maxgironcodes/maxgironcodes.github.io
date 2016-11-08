@@ -19,6 +19,10 @@
   padding-right: 22px;
 }
 
+#WORKS .row:last-child .columns {
+  padding-bottom: 0;
+}
+
 #BLOG,
 #POST {
   padding-left: $gutter * 2;
