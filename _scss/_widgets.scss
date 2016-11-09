@@ -2,14 +2,23 @@
   max-width: 618px;
   margin: auto;
   text-align: center;
+  position: relative;
 
   &_pic {
     width: 155px;
     height: 155px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid $c-blue;
     margin: 0 auto;
+    padding: 7px;
     display: inline-block;
+  }
+  &_border {
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &_tagline {
     font-size: 1.2rem;
