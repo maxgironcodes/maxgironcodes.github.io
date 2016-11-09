@@ -2,7 +2,6 @@
   max-width: 618px;
   margin: auto;
   text-align: center;
-  position: relative;
 
   &_pic {
     width: 155px;
@@ -12,6 +11,11 @@
     margin: 0 auto;
     padding: 7px;
     display: inline-block;
+    transition: padding 100ms linear 200ms;
+
+    &:hover {
+      padding: 10px;
+    }
   }
   &_border {
     width: 155px;
