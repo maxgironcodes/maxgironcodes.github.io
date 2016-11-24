@@ -6,10 +6,17 @@
     <meta name="description" content="{{ site.description }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="/css/index.css"/>
   </head>
   <body>
-    {{ content }}
+    <div id="WRAPPER">
+      {% include profile.html %}
+      <div id="CONTENT">
+        {{ content }}
+      </div>
+    </div>
     {% include footer.html %}
+    <script src="/js/jquery-custom.min.js"></script>
+    <script src="/js/ajax.js"></script>
   </body>
 </html>

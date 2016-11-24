@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-    <link rel="stylesheet" href="{{ site.url }}/css/prism.css"/>
-    <link rel="stylesheet" href="{{ site.url }}/css/index.css"/>
-  </head>
-  <body>
-    <div id="WRAPPER-NARROW">
-      {% include profile.html %}
-      <section id="POST">
-        <div class="post add-shadow" style="border-color: #{{ page.color }};">
-          <h2 class="post_title">{{ page.title }}</h2>
-          <div class="post_info">
-            <span class="post_date">{{ page.date | date: "%B %-d, %Y" }}</span>
-            <span class="post_time">
-              {% assign words = content | number_of_words %}
-              {% if words < 360 %} 1
-              {% else %} {{ words | divided_by:180 }}
-              {% endif %} min read
-            </span>
-          </div>
-          {{ content }}
-        </div>
-      </section>
-    </div>
-    {% include footer.html %}
-    <script src="{{ site.url }}/js/prism.js"></script>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="post add-shadow" style="border-color: #{{ page.color }};">
+  <h2 class="post_title">{{ page.title }}</h2>
+  <div class="post_info">
+    <span class="post_date">{{ page.date | date: "%B %-d, %Y" }}</span>
+    <span class="post_time">
+      {% assign words = content | number_of_words %}
+      {% if words < 360 %} 1
+      {% else %} {{ words | divided_by:180 }}
+      {% endif %} min read
+    </span>
+  </div>
+  {{ content }}
+</div>

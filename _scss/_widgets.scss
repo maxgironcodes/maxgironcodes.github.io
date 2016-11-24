@@ -11,11 +11,13 @@
     margin: 0 auto;
     padding: 7px;
     display: inline-block;
-    transition: padding 100ms linear 200ms;
+    /*
+    transition: all 100ms linear 200ms;
 
     &:hover {
-      padding: 10px;
+      border-color: scale-color($c-blue, $lightness: -25%);
     }
+    */
   }
   &_border {
     width: 155px;

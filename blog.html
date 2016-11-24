@@ -2,15 +2,10 @@
 layout: default
 ---
 
-<div id="WRAPPER-NARROW">
-  {% include profile.html %}
-  <section id="BLOG">
-    {% for post in site.posts %}
-    <a class="card add-shadow" href="{{ post.url }}" style="border-color: #{{ post.color }};">
-      <h2 class="card_title">{{ post.title }}</h2>
-      <h3 class="card_date">{{ post.date | date: "%B %-d, %Y" }}</h3>
-      <p class="card_caption">{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </a>
-    {% endfor %}
-  </section>
-</div>
+{% for post in site.posts %}
+<a class="card add-shadow" href="{{ post.url }}" style="border-color: #{{ post.color }};" onclick="ajax.init(event);">
+  <h2 class="card_title">{{ post.title }}</h2>
+  <h3 class="card_date">{{ post.date | date: "%B %-d, %Y" }}</h3>
+  <p class="card_caption">{{ post.content | strip_html | truncatewords: 50 }}</p>
+</a>
+{% endfor %}

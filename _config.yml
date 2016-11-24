@@ -19,5 +19,5 @@ exclude:
   - Gemfile.lock
 sass:
   sass_dir: _scss
-permalink: /:title
+permalink: /blog/:title.html
 incremental: false
